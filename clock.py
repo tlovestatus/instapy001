@@ -21,8 +21,7 @@ print(workspace_in_use["path"])
 # get an InstaPy session!
 session = InstaPy(username=os.environ['username'],
                       password=os.environ['password'],
-                      headless_browser=True,
-                      nogui=True)
+                      headless_browser=True)
 
 @sched.scheduled_job('cron', hour=os.environ['hour'],minute=os.environ['minute'])
 def scheduled_job():
