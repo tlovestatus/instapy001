@@ -23,7 +23,8 @@ def scheduled_job():
     # get an InstaPy session!
     session = InstaPy(username=os.environ['username'],
                       password=os.environ['password'],
-                      headless_browser=True)
+                      headless_browser=True,
+                      nogui=True)
 
     with smart_run(session):
         """ Activity flow """
