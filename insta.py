@@ -11,10 +11,12 @@ random.shuffle(follow_likers_of_users)
 set_workspace(path="./")
 workspace_in_use = get_workspace()
 print(workspace_in_use["path"])
-
+insta_username=os.environ['username']
+insta_password=os.environ['password']
+print(f"Logging in {insta_username} with {insta_password}")
 # get an InstaPy session!
-session = InstaPy(username=os.environ['username'],
-                      password=os.environ['password'],
+session = InstaPy(username=insta_username,
+                      password=insta_password,
                       headless_browser=True)
 
 
