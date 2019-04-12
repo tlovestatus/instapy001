@@ -1,3 +1,4 @@
+apscheduler
 certifi>=2018.10.15
 chardet>=3.0.4
 clarifai>=2.4.1
@@ -20,4 +21,3 @@ MeaningCloud-python>=1.1.1
 PyYAML>=3.13
 instapy-chromedriver
 instapy
-apscheduler
